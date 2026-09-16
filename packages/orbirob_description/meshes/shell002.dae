@@ -1,0 +1,106 @@
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor/>
+    <created>2026-09-16T16:52:55.464783</created>
+    <modified>2026-09-16T16:52:55.464783</modified>
+    <unit name="meter" meter="1.0"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="effect_SHELL002_shape002" name="effect_SHELL002_shape002">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0.0 0.0 0.0 1.0</color>
+            </emission>
+            <ambient>
+              <color>0.0 0.0 0.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <color>0.67843097448349 0.7098039984703064 0.7411760091781616 1.0</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1.0</color>
+            </specular>
+            <shininess>
+              <float>0.0</float>
+            </shininess>
+            <reflective>
+              <color>0.0 0.0 0.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.0</float>
+            </reflectivity>
+            <transparent>
+              <color>0.0 0.0 0.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>0</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="geometry0" name="SHELL002_shape002">
+      <mesh>
+        <source id="cubeverts-array0">
+          <float_array count="108" id="cubeverts-array0-array">0.0014 0.001573224 -0.001408216 0.0014 0.001654331 -0.001354023 0.0014 0.001576466 -0.001409995 0.0014 0.001655878 -0.001355486 0.0014 0.001523555 -0.00149048 0.0014 0.001519031 -0.001489322 0.0014 0.001750002 -0.001334994 0.0014 0.001505 -0.001584996 0.0014 0.0015 -0.001584993 0.0014 0.00151903 -0.001680664 0.0014 0.001523555 -0.001679511 0.0014 0.001573223 -0.00176177 0.0014 0.001576465 -0.001759996 0.0014 0.001654329 -0.001815964 0.0014 0.001655877 -0.001814505 0.0014 0.001750001 -0.001834994 0.00155 0.001750002 -0.001834994 0.00155 0.001654331 -0.001815964 0.00155 0.001573224 -0.001761771 0.00155 0.001519031 -0.001680666 0.00155 0.0015 -0.001584995 0.00155 0.00151903 -0.001489323 0.00155 0.001573223 -0.001408217 0.00155 0.00165433 -0.001354024 0.00155 0.001750001 -0.001334994 0.00155 0.001576465 -0.001409995 0.00155 0.001655877 -0.001355486 0.00155 0.001523555 -0.001490481 0.00155 0.001505 -0.001584996 0.00155 0.001523555 -0.001679511 0.00155 0.001576465 -0.001759997 0.00155 0.001655877 -0.001814505 0.00155 0.001755998 -0.001834994 0.0014 0.001755998 -0.001834994 0.00155 0.001755 -0.001334995 0.0014 0.001755 -0.001334995</float_array>
+          <technique_common>
+            <accessor count="36" source="#cubeverts-array0-array" stride="3">
+              <param type="float" name="X"/>
+              <param type="float" name="Y"/>
+              <param type="float" name="Z"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cubenormals-array0">
+          <float_array count="168" id="cubenormals-array0-array">-1 0 0 -1 0 -0 -1 0 0 -1 -0 0 -1 0 0 -1 0 0 -1 -0 0 -1 -0 -0 -1 0 0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 0 -1 0 -0 2.213571e-06 -0.5555646 -0.8314734 -1.412371e-06 -0.1950881 -0.9807857 2.192592e-06 -0.8314666 -0.5555747 -2.192652e-06 -0.5555702 -0.8314697 2.351036e-06 -0.9807845 -0.1950946 -2.658132e-06 -0.8314708 -0.5555685 2.790737e-06 -0.980786 0.1950866 -2.790741e-06 -0.980786 -0.1950869 1.997351e-06 -0.8314702 0.5555694 -3.130481e-06 -0.9807842 0.1950956 2.192663e-06 -0.5555694 0.8314702 -2.192592e-06 -0.8314666 0.5555747 2.036788e-06 -0.1950881 0.9807857 -1.994292e-06 -0.555564 0.8314738 1 0 0 1 0 0 1 0 -0 1 0 0 1 0 0 1 0 -0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1.182572e-06 0.5659155 0.8244632 1.144071e-06 0.2126969 0.9771183 -1.346652e-06 0.8356112 0.5493215 1.611522e-07 0.5659173 0.824462 -4.736508e-07 0.9812696 0.1926395 1.933827e-07 0.8356124 0.5493194 0 0.9812697 -0.1926388 0 0.9812697 0.1926388 -6.455971e-07 0.8356119 -0.5493203 3.223031e-07 0.9812696 -0.1926393 -8.218873e-07 0.5659181 -0.8244615 9.024492e-07 0.8356105 -0.5493223 -9.770732e-07 0.2127358 -0.9771097 1.643746e-06 0.565915 -0.8244637</float_array>
+          <technique_common>
+            <accessor count="56" source="#cubenormals-array0-array" stride="3">
+              <param type="float" name="X"/>
+              <param type="float" name="Y"/>
+              <param type="float" name="Z"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cubeverts-array0-vertices">
+          <input semantic="POSITION" source="#cubeverts-array0"/>
+        </vertices>
+        <triangles count="56" material="ref_SHELL002_shape002">
+          <input offset="0" semantic="VERTEX" source="#cubeverts-array0-vertices"/>
+          <input offset="1" semantic="NORMAL" source="#cubenormals-array0"/>
+          <p>0 0 1 0 2 0 1 1 3 1 2 1 0 2 4 2 5 2 2 3 4 3 0 3 1 4 6 4 3 4 5 5 7 5 8 5 4 6 7 6 5 6 7 7 9 7 8 7 7 8 10 8 9 8 10 9 11 9 9 9 10 10 12 10 11 10 12 11 13 11 11 11 12 12 14 12 13 12 14 13 15 13 13 13 13 14 17 14 18 14 13 15 15 15 17 15 11 16 18 16 19 16 11 17 13 17 18 17 9 18 19 18 20 18 9 19 11 19 19 19 8 20 20 20 21 20 8 21 9 21 20 21 5 22 21 22 22 22 5 23 8 23 21 23 0 24 22 24 23 24 0 25 5 25 22 25 1 26 23 26 24 26 1 27 0 27 23 27 23 28 22 28 25 28 26 29 23 29 25 29 27 30 22 30 21 30 27 31 25 31 22 31 24 32 23 32 26 32 28 33 21 33 20 33 28 34 27 34 21 34 19 35 28 35 20 35 29 36 28 36 19 36 18 37 29 37 19 37 30 38 29 38 18 38 17 39 30 39 18 39 31 40 30 40 17 40 16 41 31 41 17 41 31 42 14 42 30 42 15 43 14 43 31 43 30 44 12 44 29 44 14 45 12 45 30 45 29 46 10 46 28 46 12 47 10 47 29 47 28 48 7 48 27 48 10 49 7 49 28 49 27 50 4 50 25 50 7 51 4 51 27 51 25 52 2 52 26 52 4 53 2 53 25 53 26 54 3 54 24 54 2 55 3 55 26 55</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_materials>
+    <material id="mat_SHELL002_shape002" name="SHELL002_shape002">
+      <instance_effect url="#effect_SHELL002_shape002"/>
+    </material>
+  </library_materials>
+  <library_visual_scenes>
+    <visual_scene id="myscene">
+      <node id="node0" name="node0">
+        <instance_geometry url="#geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ref_SHELL002_shape002" target="#mat_SHELL002_shape002"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#myscene"/>
+  </scene>
+</COLLADA>

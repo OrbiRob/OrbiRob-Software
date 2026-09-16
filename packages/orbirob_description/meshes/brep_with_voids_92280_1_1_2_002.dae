@@ -1,0 +1,106 @@
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor/>
+    <created>2026-09-16T16:52:55.457281</created>
+    <modified>2026-09-16T16:52:55.457281</modified>
+    <unit name="meter" meter="1.0"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="effect_BREP_WITH_VOIDS_92280_1_1_2_002_shape002" name="effect_BREP_WITH_VOIDS_92280_1_1_2_002_shape002">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0.0 0.0 0.0 1.0</color>
+            </emission>
+            <ambient>
+              <color>0.0 0.0 0.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <color>0.67843097448349 0.7098039984703064 0.7411760091781616 1.0</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1.0</color>
+            </specular>
+            <shininess>
+              <float>0.0</float>
+            </shininess>
+            <reflective>
+              <color>0.0 0.0 0.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.0</float>
+            </reflectivity>
+            <transparent>
+              <color>0.0 0.0 0.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>0</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="geometry0" name="BREP_WITH_VOIDS_92280_1_1_2_002_shape002">
+      <mesh>
+        <source id="cubeverts-array0">
+          <float_array count="96" id="cubeverts-array0-array">0.00155 0.001690012 -0.005935041 0.0014 0.001695001 -0.005934995 0.0014 0.001690012 -0.005935041 0.00155 0.001695001 -0.005934995 0.0014 0.001595001 -0.006034996 0.0014 0.001607579 -0.005986442 0.00155 0.001595001 -0.006034996 0.00155 0.001607579 -0.005986442 0.0014 0.00164215 -0.005950103 0.00155 0.00164215 -0.005950103 0.0014 0.001640007 -0.005948387 0.0014 0.001603399 -0.00598499 0.0014 0.00159 -0.006034994 0.0014 0.00159 -0.006734994 0.0014 0.001595001 -0.006734996 0.0014 0.001603399 -0.006784996 0.0014 0.001607578 -0.006783548 0.0014 0.001640003 -0.006821598 0.0014 0.001642147 -0.006819887 0.0014 0.001690005 -0.006834994 0.00155 0.00159 -0.006034994 0.00155 0.001603399 -0.005984991 0.00155 0.001640007 -0.005948387 0.00155 0.00159 -0.006734994 0.00155 0.001595001 -0.006734996 0.00155 0.0016034 -0.006784998 0.00155 0.001607579 -0.006783549 0.00155 0.001640009 -0.006821601 0.00155 0.00164215 -0.006819889 0.00155 0.001690016 -0.006834871 0.0014 0.001695001 -0.006834995 0.00155 0.001695001 -0.006834995</float_array>
+          <technique_common>
+            <accessor count="32" source="#cubeverts-array0-array" stride="3">
+              <param type="float" name="X"/>
+              <param type="float" name="Y"/>
+              <param type="float" name="Z"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cubenormals-array0">
+          <float_array count="144" id="cubenormals-array0-array">0 0.9680433 -0.2507834 -7.659464e-07 0.9680427 -0.2507856 4.642074e-07 0.7245165 -0.6892575 -5.757923e-07 0.7245143 -0.6892597 2.316601e-06 0.3001875 -0.9538803 -1 0 0 -1 -0 0 -1 0 0 -1 0 0 -1 -0 0 -1 -0 0 -1 0 -0 -1 -0 -0 -1 0 0 -1 0 -0 -1 0 0 -1 0 -0 8.228185e-07 -0.9659212 0.2588363 8.228186e-07 -0.9659212 0.2588363 5.61926e-07 -0.7070665 0.7071471 2.248806e-06 -0.707063 0.7071506 2.024405e-07 -0.2578708 0.9661794 1 0 -0 1 0 0 1 0 0 1 0 -0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 1.702989e-07 0 1 1.702989e-07 -0 0.9680449 0.250777 3.6941e-06 0.7245309 0.6892422 -1.454526e-06 0.9680438 0.2507812 7.580451e-06 0.3010238 0.9536166 -2.181782e-06 0.7245188 0.689255 -0 -0.9659228 -0.2588305 -5.620241e-06 -0.7070849 -0.7071287 5.809893e-06 -0.9659184 -0.2588467 -1.141713e-05 -0.2587788 -0.9659366 1.17976e-05 -0.7070492 -0.7071643 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor count="48" source="#cubenormals-array0-array" stride="3">
+              <param type="float" name="X"/>
+              <param type="float" name="Y"/>
+              <param type="float" name="Z"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cubeverts-array0-vertices">
+          <input semantic="POSITION" source="#cubeverts-array0"/>
+        </vertices>
+        <triangles count="48" material="ref_BREP_WITH_VOIDS_92280_1_1_2_002_shape002">
+          <input offset="0" semantic="VERTEX" source="#cubeverts-array0-vertices"/>
+          <input offset="1" semantic="NORMAL" source="#cubenormals-array0"/>
+          <p>4 0 5 0 6 0 6 1 5 1 7 1 7 2 8 2 9 2 5 3 8 3 7 3 8 4 2 4 9 4 10 5 5 5 11 5 8 6 5 6 10 6 10 7 2 7 8 7 11 8 4 8 12 8 5 9 4 9 11 9 4 10 13 10 12 10 4 11 14 11 13 11 14 12 15 12 13 12 14 13 16 13 15 13 16 14 17 14 15 14 16 15 18 15 17 15 18 16 19 16 17 16 12 17 20 17 21 17 11 18 12 18 21 18 10 19 21 19 22 19 10 20 11 20 21 20 2 21 10 21 22 21 7 22 22 22 21 22 7 23 9 23 22 23 0 24 22 24 9 24 6 25 21 25 20 25 6 26 7 26 21 26 23 27 6 27 20 27 24 28 6 28 23 28 25 29 24 29 23 29 26 30 24 30 25 30 27 31 26 31 25 31 28 32 26 32 27 32 29 33 28 33 27 33 6 34 24 34 14 34 6 35 14 35 4 35 14 36 24 36 16 36 16 37 26 37 18 37 24 38 26 38 16 38 18 39 28 39 19 39 26 40 28 40 18 40 23 41 13 41 15 41 25 42 15 42 17 42 25 43 23 43 15 43 27 44 17 44 19 44 27 45 25 45 17 45 23 46 20 46 13 46 13 47 20 47 12 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_materials>
+    <material id="mat_BREP_WITH_VOIDS_92280_1_1_2_002_shape002" name="BREP_WITH_VOIDS_92280_1_1_2_002_shape002">
+      <instance_effect url="#effect_BREP_WITH_VOIDS_92280_1_1_2_002_shape002"/>
+    </material>
+  </library_materials>
+  <library_visual_scenes>
+    <visual_scene id="myscene">
+      <node id="node0" name="node0">
+        <instance_geometry url="#geometry0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ref_BREP_WITH_VOIDS_92280_1_1_2_002_shape002" target="#mat_BREP_WITH_VOIDS_92280_1_1_2_002_shape002"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#myscene"/>
+  </scene>
+</COLLADA>
