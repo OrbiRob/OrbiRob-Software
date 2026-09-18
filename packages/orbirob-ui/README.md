@@ -5,7 +5,6 @@
 Aşağıdaki programlar $HOME/tft klasörüne kopyalanacak
 
 
-
 ui\_simple.py
 
 ui\_battery.py
