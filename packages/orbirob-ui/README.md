@@ -19,10 +19,11 @@ ui\_shutdown.py
 Sistem tekrar açıldığında yeni versiyon çalışıyor olacaktır.
 
 
+**** Versiyon: 1.0.1 ******************
+IP adresi değişikliği olduğunda, ekranda güncelleniyor
 
 
-
-\*\*\*  Versiyon: 1.0.0 \*\*\*\*\*\*\*\*\*\*\*\*
+**** Versiyon: 1.0.0 ******************
 
 
 
