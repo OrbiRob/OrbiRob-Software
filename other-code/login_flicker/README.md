@@ -1,5 +1,3 @@
-
-
 \*\*\* Problem: Login ekranında şifre girildikten sonra, ekranda login tamamlana kadar titreme oluyor.
 
 
@@ -12,7 +10,7 @@
 
 
 
-&#x09;Burada WaylandEnble=false olarak satırı, önüne '#' işareti koyarak devre dışı bırakıyoruz.
+&#x09;Burada WaylandEnble=false olarak satırın önüne '#' işareti koyarak devre dışı bırakıyoruz.
 
 
 
@@ -27,8 +25,4 @@
 
 
 &#x09;Yaptığı işlem ise, login esnasında Wayland kullanılıyor - login sonrası ise X11 ile devam ediliyor.
-
-
-
-
 
