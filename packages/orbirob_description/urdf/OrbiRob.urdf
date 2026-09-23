@@ -8,6 +8,9 @@
       <geometry>
         <mesh filename="package://orbirob_description/meshes/tophatpartdesign001.dae"/>
       </geometry>
+      <material name="black">
+        <color rgba="0.05 0.05 0.05 1.0"/>
+      </material>
     </visual>
     <visual>
       <!--base_link001/base_link001.Part__Feature106.-->
@@ -113,6 +116,9 @@
       <geometry>
         <mesh filename="package://orbirob_description/meshes/topplate002.dae"/>
       </geometry>
+      <material name="black">
+        <color rgba="0.05 0.05 0.05 1.0"/>
+      </material>
     </visual>
     <visual>
       <!--base_link001/base_link001.Part__Feature121.-->
@@ -120,6 +126,9 @@
       <geometry>
         <mesh filename="package://orbirob_description/meshes/middleplate001.dae"/>
       </geometry>
+      <material name="anthracite">
+        <color rgba="0.25 0.25 0.25 1.0"/>
+      </material>
     </visual>
     <visual>
       <!--base_link001/base_link001.Part__Feature122.-->
@@ -565,15 +574,15 @@
     <parent link="base_link"/>
     <child link="wheel_right_link"/>
     <origin rpy="0 0 0" xyz="0.0 -0.1522 0.03915"/>
-    <axis xyz="0 0 1"/>
-    <limit effort="0.0" velocity="0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="10.0" velocity="10.0"/>
   </joint>
   <joint name="wheel_left_joint" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_left_link"/>
     <origin rpy="0 -1.332800375e-07 0" xyz="0.0 0.1631 0.03915"/>
-    <axis xyz="0 0 1"/>
-    <limit effort="0.0" velocity="0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="10.0" velocity="10.0"/>
   </joint>
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
@@ -586,6 +595,7 @@
     <origin rpy="0 0.026179938779890263 3.141592653589793" xyz="0.00829037 0.0 0.293108"/>
   </joint>
 
+<!-- ROS 2 Humble + Gazebo Sim configuration -->
 <ros2_control name="GazeboSimSystem" type="system">
 
   <hardware>
@@ -605,5 +615,56 @@
   </joint>
 
 </ros2_control>
+
+
+<!-- ROS 2 Humble + Gazebo Sim -->
+<!-- ROS 2 Humble + Gazebo Sim -->
+<gazebo>
+  <plugin
+    filename="libgz_ros2_control-system.so"
+    name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+
+    <robot_param>robot_description</robot_param>
+    <robot_param_node>robot_state_publisher</robot_param_node>
+
+    <parameters>
+      $(find orbirob_description)/config/OrbiRob_controllers.yaml
+    </parameters>
+
+  </plugin>
+</gazebo>
+
+
+<!-- ROS 2 Jazzy + Gazebo Sim -->
+<!--
+<ros2_control name="GazeboSimSystem" type="system">
+
+  <hardware>
+    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+  </hardware>
+
+  <joint name="wheel_left_joint">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="wheel_right_joint">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+</ros2_control>
+-->
+<!-- Gazebo Sim plugin for ROS 2 Jazzy -->
+<!--
+<gazebo>
+  <plugin
+    filename="libgz_ros2_control-system.so"
+    name="gz_ros2_control::GazeboSimROS2ControlPlugin"/>
+</gazebo>
+-->
+
 
 </robot>
