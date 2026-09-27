@@ -8,9 +8,6 @@
       <geometry>
         <mesh filename="package://orbirob_description/meshes/tophatpartdesign001.dae"/>
       </geometry>
-      <material name="black">
-        <color rgba="0.05 0.05 0.05 1.0"/>
-      </material>
     </visual>
     <visual>
       <!--base_link001/base_link001.Part__Feature106.-->
@@ -116,9 +113,6 @@
       <geometry>
         <mesh filename="package://orbirob_description/meshes/topplate002.dae"/>
       </geometry>
-      <material name="black">
-        <color rgba="0.05 0.05 0.05 1.0"/>
-      </material>
     </visual>
     <visual>
       <!--base_link001/base_link001.Part__Feature121.-->
@@ -126,9 +120,6 @@
       <geometry>
         <mesh filename="package://orbirob_description/meshes/middleplate001.dae"/>
       </geometry>
-      <material name="anthracite">
-        <color rgba="0.25 0.25 0.25 1.0"/>
-      </material>
     </visual>
     <visual>
       <!--base_link001/base_link001.Part__Feature122.-->
@@ -320,55 +311,6 @@
       </geometry>
     </visual>
     <visual>
-      <!--base_link001/base_link001.CasterWheel.Part__Feature149.-->
-      <origin rpy="1.5707963267948968 0 -3.141592653589793" xyz="0.0 0.0 0.045"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/casterwheel1.dae"/>
-      </geometry>
-    </visual>
-    <visual>
-      <!--base_link001/base_link001.CasterWheel.Part__Feature150.-->
-      <origin rpy="1.5707963267948968 0 -3.141592653589793" xyz="0.0 0.0 0.045"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/wheelaxle.dae"/>
-      </geometry>
-    </visual>
-    <visual>
-      <!--base_link001/base_link001.CasterWheel.Part__Feature151.-->
-      <origin rpy="-1.570796326794897 -1.570796326794896 0" xyz="0.0 0.0 0.045"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/maincasterbody.dae"/>
-      </geometry>
-    </visual>
-    <visual>
-      <!--base_link001/base_link001.CasterWheel.Part__Feature152.-->
-      <origin rpy="0 0 0" xyz="-0.00172354 -0.0226224 0.0585277"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/uppercasterbody.dae"/>
-      </geometry>
-    </visual>
-    <visual>
-      <!--base_link001/base_link001.CasterWheel.Part__Feature153.-->
-      <origin rpy="-1.570796326794897 -1.570796326794896 0" xyz="0.0 0.0 0.045"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/bearings.dae"/>
-      </geometry>
-    </visual>
-    <visual>
-      <!--base_link001/base_link001.CasterWheel.Part__Feature154.-->
-      <origin rpy="1.5707963267948963 -1.5707963267948963 0" xyz="0.0 0.0 0.045"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/castershaft.dae"/>
-      </geometry>
-    </visual>
-    <visual>
-      <!--base_link001/base_link001.Part__Feature155.-->
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="package://orbirob_description/meshes/casterwheel001.dae"/>
-      </geometry>
-    </visual>
-    <visual>
       <!--base_link001/base_link001.Part__Feature156.-->
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
@@ -391,16 +333,16 @@
   <link name="wheel_right_link">
     <visual>
       <!--wheel_right_link001/wheel_right_link001.-->
-      <origin rpy="0 0 0" xyz="0.0 0.1522 -0.03915"/>
+      <origin rpy="-1.5707963267948974 0 -3.1415926535897927" xyz="0.0 0.03915 -0.1482"/>
       <geometry>
         <mesh filename="package://orbirob_description/meshes/wheel_right_link_.dae"/>
       </geometry>
     </visual>
     <collision>
       <!--col__wheel_right_link__col_wheel_right_link__BoundCylinder/col_wheel_right_link__BoundCylinder.-->
-      <origin rpy="-1.5707963267948963 0.07853981633976988 -3.1415926535897927" xyz="0.0 0.00375 0.0"/>
+      <origin rpy="0 0 0.07853981633977" xyz="0.0 0.0 0.00025"/>
       <geometry>
-        <cylinder length="0.03" radius="0.05657"/>
+        <cylinder length="0.03" radius="0.04"/>
       </geometry>
     </collision>
     <inertial>
@@ -412,16 +354,16 @@
   <link name="wheel_left_link">
     <visual>
       <!--wheel_left_link001/wheel_left_link001.-->
-      <origin rpy="0 1.3806710752461995e-07 0" xyz="0.0 -0.1631 -0.03915"/>
+      <origin rpy="-1.5707963267948968 0 3.1415925411637198" xyz="0.0 0.03915 0.1481"/>
       <geometry>
         <mesh filename="package://orbirob_description/meshes/wheel_left_link_.dae"/>
       </geometry>
     </visual>
     <collision>
       <!--col__wheel_left_link__col_wheel_left_link__BoundCylinder/col_wheel_left_link__BoundCylinder.-->
-      <origin rpy="-1.5707963267948968 0.3926992197658584 0" xyz="0.0 -0.01465 0.0"/>
+      <origin rpy="3.1415926535897927 0 2.7488934594649694" xyz="0.0 0.0 -0.00035"/>
       <geometry>
-        <cylinder length="0.03" radius="0.05657"/>
+        <cylinder length="0.03" radius="0.04"/>
       </geometry>
     </collision>
     <inertial>
@@ -552,37 +494,149 @@
   <link name="lidar_link">
     <visual>
       <!--lidar_link001/lidar_link001.-->
-      <origin rpy="0 0.026179938779890263 -3.141592653589793" xyz="0.0159602 0.0 -0.29279"/>
+      <origin rpy="0 0.026179938779890274 -3.141592653589793" xyz="0.0159602 0.0 -0.29279"/>
       <geometry>
         <mesh filename="package://orbirob_description/meshes/lidar_link_.dae"/>
       </geometry>
     </visual>
     <collision>
       <!--col__lidar_link__col_lidar_link__BoundBox/col_lidar_link__BoundBox.-->
-      <origin rpy="0 0.026179938779890263 -3.141592653589793" xyz="-0.00025008 0.0 0.0206429"/>
+      <origin rpy="0 0.026179938779890274 -3.141592653589793" xyz="-0.00025008 0.0 0.0206429"/>
       <geometry>
         <box size="0.055600000000001044 0.055600000000000004 0.041300009745004855"/>
       </geometry>
     </collision>
     <inertial>
       <mass value="0.11"/>
-      <origin rpy="0 0.026179938779890263 -3.141592653589793" xyz="0.0 9.45421e-05 0.0139403"/>
-      <inertia ixx="4.7960408672617775e-05" ixy="-5.871538506182478e-09" ixz="-7.216677432917752e-08" iyy="4.823118864698968e-05" iyz="-5.578310866856724e-08" izz="6.79904179894586e-05"/>
+      <origin rpy="0 0.026179938779890274 -3.141592653589793" xyz="0.0 9.45421e-05 0.0139403"/>
+      <inertia ixx="4.79604086726e-05" ixy="-5.8715385e-09" ixz="-7.21667743e-08" iyy="4.8231188647e-05" iyz="-5.57831087e-08" izz="6.79904179895e-05"/>
+    </inertial>
+  </link>
+  <link name="caster_front_link">
+    <visual>
+      <!--caster_front_link_/Part__Feature149.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948966" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/casterwheel1.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature150.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948966" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/wheelaxle.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature151.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948963" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/maincasterbody.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature152.-->
+      <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/uppercasterbody.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature153.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948963" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/bearings.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature154.-->
+      <origin rpy="1.570796326794896 0 1.5707963267948968" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/castershaft.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!--col__caster_front_link__col_CasterWheel__BoundCylinder/col_CasterWheel__BoundCylinder.-->
+      <origin rpy="1.570796326794897 0 3.1415926535897927" xyz="0.14345 0.0 0.01215"/>
+      <geometry>
+        <cylinder length="0.01" radius="0.012"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.025"/>
+      <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.138977 -0.000119505 0.019965"/>
+      <inertia ixx="4.751061878114583e-06" ixy="-2.3348203467504996e-08" ixz="1.3345262892938626e-08" iyy="3.0066383977892174e-06" iyz="1.2487492428049434e-06" izz="3.7690104188087104e-06"/>
+    </inertial>
+  </link>
+  <link name="caster_rear_link">
+    <visual>
+      <!--caster_front_link_/Part__Feature149.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948966" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/casterwheel1.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature150.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948966" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/wheelaxle.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature151.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948963" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/maincasterbody.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature152.-->
+      <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/uppercasterbody.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature153.-->
+      <origin rpy="1.5707963267948963 0 1.5707963267948963" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/bearings.dae"/>
+      </geometry>
+    </visual>
+    <visual>
+      <!--caster_front_link_/Part__Feature154.-->
+      <origin rpy="1.570796326794896 0 1.5707963267948968" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <mesh filename="package://orbirob_description/meshes/castershaft.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!--col__caster_rear_link__col_CasterWheel__BoundCylinder001/col_CasterWheel__BoundCylinder001.-->
+      <origin rpy="1.570796326794897 0 3.1415926535897927" xyz="-0.133 0.0 0.01215"/>
+      <geometry>
+        <cylinder length="0.01" radius="0.012"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.025"/>
+      <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="-0.137473 -0.000119505 0.019965"/>
+      <inertia ixx="4.751061878114583e-06" ixy="-2.3348203467504996e-08" ixz="1.3345262892938626e-08" iyy="3.0066383977892174e-06" iyz="1.2487492428049434e-06" izz="3.7690104188087104e-06"/>
     </inertial>
   </link>
   <joint name="wheel_right_joint" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_right_link"/>
-    <origin rpy="0 0 0" xyz="0.0 -0.1522 0.03915"/>
-    <axis xyz="0 1 0"/>
-    <limit effort="10.0" velocity="10.0"/>
+    <origin rpy="-1.5707963267948968 0 -3.141592653589793" xyz="0.0 -0.1482 0.03915"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="0.0" velocity="0.0"/>
   </joint>
   <joint name="wheel_left_joint" type="continuous">
     <parent link="base_link"/>
     <child link="wheel_left_link"/>
-    <origin rpy="0 -1.332800375e-07 0" xyz="0.0 0.1631 0.03915"/>
-    <axis xyz="0 1 0"/>
-    <limit effort="10.0" velocity="10.0"/>
+    <origin rpy="-1.5707963267948966 -2.564103401974412e-08 3.141592653589793" xyz="0.0 0.1481 0.03915"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="0.0" velocity="0.0"/>
   </joint>
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
@@ -592,79 +646,47 @@
   <joint name="lidar_joint" type="fixed">
     <parent link="base_link"/>
     <child link="lidar_link"/>
-    <origin rpy="0 0.026179938779890263 3.141592653589793" xyz="0.00829037 0.0 0.293108"/>
+    <origin rpy="0 0.026179938779890274 3.141592653589793" xyz="0.00829037 0.0 0.293108"/>
   </joint>
-
-<!-- ROS 2 Humble + Gazebo Sim configuration -->
-<ros2_control name="GazeboSimSystem" type="system">
-
-  <hardware>
-    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-  </hardware>
-
-  <joint name="wheel_left_joint">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
+  <joint name="caster_front_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster_front_link"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
   </joint>
-
-  <joint name="wheel_right_joint">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
+  <joint name="caster_rear_joint" type="fixed">
+    <parent link="caster_rear_link"/>
+    <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
   </joint>
+  <!-- ============================================================ -->
+<!-- ROS 2 Humble + Gazebo Classic 11                             -->
+<!-- ============================================================ -->
 
-</ros2_control>
-
-
-<!-- ROS 2 Humble + Gazebo Sim -->
-<!-- ROS 2 Humble + Gazebo Sim -->
 <gazebo>
-  <plugin
-    filename="libgz_ros2_control-system.so"
-    name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+  <plugin name="orbirob_diff_drive"
+          filename="libgazebo_ros_diff_drive.so">
 
-    <robot_param>robot_description</robot_param>
-    <robot_param_node>robot_state_publisher</robot_param_node>
+    <ros>
+      <namespace>/</namespace>
+    </ros>
 
-    <parameters>
-      $(find orbirob_description)/config/OrbiRob_controllers.yaml
-    </parameters>
+    <left_joint>wheel_left_joint</left_joint>
+    <right_joint>wheel_right_joint</right_joint>
+
+    <wheel_separation>0.291</wheel_separation>
+    <wheel_diameter>0.04</wheel_diameter>
+
+    <max_wheel_torque>20.0</max_wheel_torque>
+    <max_wheel_acceleration>5.0</max_wheel_acceleration>
+
+    <odometry_frame>odom</odometry_frame>
+    <robot_base_frame>base_link</robot_base_frame>
+
+    <publish_odom>true</publish_odom>
+    <publish_odom_tf>true</publish_odom_tf>
 
   </plugin>
 </gazebo>
 
-
-<!-- ROS 2 Jazzy + Gazebo Sim -->
-<!--
-<ros2_control name="GazeboSimSystem" type="system">
-
-  <hardware>
-    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-  </hardware>
-
-  <joint name="wheel_left_joint">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
-  </joint>
-
-  <joint name="wheel_right_joint">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
-  </joint>
-
-</ros2_control>
--->
-<!-- Gazebo Sim plugin for ROS 2 Jazzy -->
-<!--
-<gazebo>
-  <plugin
-    filename="libgz_ros2_control-system.so"
-    name="gz_ros2_control::GazeboSimROS2ControlPlugin"/>
-</gazebo>
--->
-
-
+  
 </robot>
